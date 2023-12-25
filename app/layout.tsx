@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,12 @@ export default function RootLayout({
         <header>
           <Header />
         </header>
-        {children}
+        <main>
+          {children}
+          <div className="container mx-auto grid grid-cols-4 gap-4">
+            <Sidebar />
+          </div>
+        </main>
       </body>
     </html>
   );
