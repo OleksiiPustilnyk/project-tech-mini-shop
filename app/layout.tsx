@@ -23,9 +23,9 @@ export default function RootLayout({
           <Header />
         </header>
         <main>
-          {children}
           <div className="container mx-auto grid grid-cols-4 gap-4">
             <Sidebar />
+            <div className="col-span-3 min-h-[fit-content]">{children}</div>
           </div>
         </main>
       </body>
