@@ -9,8 +9,8 @@ interface Props {
 
 export default function Category({ params }: Props) {
   return (
-    <div>
-      <h1>Products on category {params.category}</h1>
+    <div className=" ">
+      <h1>Products in category {params.category}</h1>
       <div className="grid grid-cols-3 gap-4">
         {productsArray.map(({ id, img, title, description, category }) => {
           if (category === params.category) {
