@@ -15,10 +15,10 @@ export default function Header() {
               <Link href="/">Home</Link>
             </li>
             <li className="hover:text-sky-400">
-              <Link href="/pages/about">About</Link>
+              <Link href="/about">About</Link>
             </li>
             <li className="hover:text-sky-400">
-              <Link href="/pages/contacts">Contcts</Link>
+              <Link href="/contacts">Contcts</Link>
             </li>
           </ul>
         </div>
