@@ -7,13 +7,13 @@ export default function Sidebar() {
     <div className="sidebar rounded-b-xl h-[fit-content]">
       <h3 className="sidebar-title">Categories:</h3>
       <ul className="sidebar-category  gap-6 list-none  ">
-        <li className="sidebar-category-product">
+        <li>
           <Link href="/iphone">iPhone</Link>
         </li>
-        <li className="sidebar-category-product">
+        <li>
           <Link href="/watch">Watch</Link>
         </li>
-        <li className="sidebar-category-product">
+        <li>
           <Link href="/macbook">Macbook</Link>
         </li>
       </ul>
