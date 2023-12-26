@@ -15,10 +15,7 @@ export default function Category({ params }: Props) {
         {productsArray.map(({ id, img, title, description, category }) => {
           if (category === params.category) {
             return (
-              <div
-                key={id}
-                className="grid items-center border border-gray-400 rounded"
-              >
+              <div key={id} className="grid items-center rounded">
                 <ProductsListItem
                   id={id}
                   img={img}
