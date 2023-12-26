@@ -3,7 +3,7 @@
 
   .proguct-image {
     // text-align: center;
-    margin-bottom: 25px;
+    // margin-bottom: 25px;
     width: auto;
     height: auto;
     display: flex;
@@ -27,21 +27,25 @@
   }
 
   .product-title {
+    color: #ee6059;
     font-size: 30px;
     margin: 15px 0;
   }
   .product-description {
     font-size: 22px;
-    margin-bottom: 15px;
+    color: #969c9d;
+    // margin-bottom: 15px;
   }
   .product-features {
     font-size: 19px;
+    color: #969c9d;
+    // margin-bottom: 15px;
+  }
+  .product-price {
+    font-size: 25px;
+    margin-top: 15px;
     margin-bottom: 15px;
   }
-  // .product-price {
-  //   font-size: 22px;
-  //   margin-bottom: 15px;
-  // }
 
   .product-img {
     text-align: center;
