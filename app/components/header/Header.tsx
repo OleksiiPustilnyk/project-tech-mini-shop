@@ -1,8 +1,7 @@
 import Link from "next/link";
 
 import "./Header.scss";
-
-// const links = ["Home", "About", "Contacts"];
+import Button from "../UI/Button/Button";
 
 export default function Header() {
   return (
@@ -23,13 +22,7 @@ export default function Header() {
           </ul>
         </div>
       </div>
-      {/* <ul className="flex gap-6 list-none">
-        {links.map((link) => (
-          <li key={link}>
-            <a href="#">{link}</a>
-          </li>
-        ))}
-      </ul> */}
+      <Button>Login</Button>
     </div>
   );
 }
