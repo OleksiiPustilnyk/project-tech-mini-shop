@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import "./Header.scss";
-import Button from "../UI/Button/Button";
+import ButtonLink from "../UI/ButtonLink/ButtonLink";
 
 export default function Header() {
   return (
@@ -22,7 +22,7 @@ export default function Header() {
           </ul>
         </div>
       </div>
-      <Button>Login</Button>
+      <ButtonLink href="/login">Login</ButtonLink>
     </div>
   );
 }
