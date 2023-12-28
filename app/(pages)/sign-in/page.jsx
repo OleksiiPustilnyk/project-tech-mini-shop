@@ -19,7 +19,7 @@ export default function SignIn() {
         </fieldset>
         <div className="form-buttons">
           <ButtonLink href="/register">Sign-Up</ButtonLink>
-          <Button>Enter</Button>
+          <Button type="submit">Enter</Button>
         </div>
       </form>
     </div>
