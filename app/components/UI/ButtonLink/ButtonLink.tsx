@@ -1,5 +1,5 @@
 import Link from "next/link";
-import css from "./ButtonLink.module.css";
+import "./ButtonLink.css";
 
 type Props = {
   children: string;
@@ -7,7 +7,7 @@ type Props = {
 };
 const ButtonLink = ({ children, href }: Props) => {
   return (
-    <Link href={href} type="button" className={css.button}>
+    <Link href={href} type="button" className="button">
       {children}
     </Link>
   );

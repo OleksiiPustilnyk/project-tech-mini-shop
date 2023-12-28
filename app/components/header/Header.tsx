@@ -22,7 +22,7 @@ export default function Header() {
           </ul>
         </div>
       </div>
-      <ButtonLink href="/login">Login</ButtonLink>
+      <ButtonLink href="/sign-in">Sign-In</ButtonLink>
     </div>
   );
 }

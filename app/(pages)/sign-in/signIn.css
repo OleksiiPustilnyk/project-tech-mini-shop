@@ -1,0 +1,27 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: min(450px, 100%);
+  margin: auto;
+  height: 75vh;
+  gap: 30px;
+}
+
+legend {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ee6059;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* .form-buttons {
+} */

@@ -1,11 +1,12 @@
-import css from "./Button.module.css";
+import "./Button.css";
 
 type Props = {
   children: string;
 };
+
 const Button = ({ children }: Props) => {
   return (
-    <button type="button" className={css.button}>
+    <button type="button" className="button">
       {children}
     </button>
   );
