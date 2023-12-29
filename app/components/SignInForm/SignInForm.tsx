@@ -33,10 +33,10 @@ const SignInForm = () => {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
-      <Input type="email" name="email">
+      <Input type="email" name="email" placeholder="Email">
         E-mail:
       </Input>
-      <Input type="password" name="password">
+      <Input type="password" name="password" placeholder="Password">
         Password:
       </Input>
 
