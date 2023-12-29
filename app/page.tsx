@@ -1,5 +1,5 @@
 import productsArray from "@/utils/productsArray";
-import ProductsListItem from "./components/products/ProductsListItem";
+import ProductsListItem from "./components/Products/ProductsListItem";
 
 export default function Home() {
   return (

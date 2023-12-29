@@ -1,13 +1,16 @@
-import Link from "next/link";
-
 import "./Header.scss";
-import ButtonLink from "../UI/ButtonLink/ButtonLink";
 import Navigation from "../Navigation/Navigation";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <div className="container mx-auto flex items-center border-b-2 px-6 py-2 h-24">
-      <h1 className="logo font-bold text-2xl cursor-pointer">Tech-MiniShop</h1>
+      <Link href="/">
+        <h1 className="logo font-bold text-2xl cursor-pointer">
+          Tech-MiniShop
+        </h1>
+      </Link>
+
       <Navigation />
     </div>
   );

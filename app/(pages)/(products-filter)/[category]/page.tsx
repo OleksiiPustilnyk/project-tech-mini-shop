@@ -1,4 +1,4 @@
-import ProductsListItem from "@/app/components/products/ProductsListItem";
+import ProductsListItem from "@/app/components/Products/ProductsListItem";
 import productsArray from "@/utils/productsArray";
 
 interface Props {
@@ -10,7 +10,10 @@ interface Props {
 export default function Category({ params }: Props) {
   return (
     <div className=" ">
-      <h1>Products in category {params.category}</h1>
+      <h1>
+        Products in category:{" "}
+        <span className="capitalize">{params.category}</span>
+      </h1>
       <div className="grid grid-cols-3 gap-4">
         {productsArray.map(
           ({ id, img, title, description, color, price, category }) => {

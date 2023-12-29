@@ -5,9 +5,9 @@ export default async function SignIn() {
   return (
     <div className="container mx-auto flex items-center flex-col">
       <h1>SignIn</h1>
-      <GoogleButton />
-      <div>or</div>
       <SignInForm />
+      <div>or</div>
+      <GoogleButton />
     </div>
   );
 }

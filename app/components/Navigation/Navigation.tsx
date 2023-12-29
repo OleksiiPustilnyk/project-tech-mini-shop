@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import ButtonLink from "../UI/ButtonLink/ButtonLink";
 import { useSession, signOut } from "next-auth/react";
 
 type Props = {};
@@ -25,21 +24,21 @@ const Navigation = (props: Props) => {
             </li>
           </ul>
           {session?.data && <Link href="/profile">Profile</Link>}
-          {session?.data ? (
-            <Link
-              className="button"
-              href="#"
-              onClick={() => signOut({ callbackUrl: "/" })}
-            >
-              SignOut
-            </Link>
-          ) : (
-            <Link className="button" href="/signin">
-              SignIn
-            </Link>
-          )}
         </div>
       </div>
+      {session?.data ? (
+        <Link
+          className="button"
+          href="#"
+          onClick={() => signOut({ callbackUrl: "/" })}
+        >
+          SignOut
+        </Link>
+      ) : (
+        <Link className="button" href="/signin">
+          SignIn
+        </Link>
+      )}
     </>
   );
 };

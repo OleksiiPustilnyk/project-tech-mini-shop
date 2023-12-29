@@ -1,4 +1,5 @@
-import "./Input.css";
+import "./Input.scss";
+
 type Props = {
   children: string;
   placeholder: string;
