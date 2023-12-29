@@ -1,15 +1,16 @@
 import "./Input.css";
 type Props = {
   children: string;
-  placeholder: string;
+
   type: string;
+  name: string;
 };
 
-const Input = ({ children, placeholder, type }: Props) => {
+const Input = ({ children, type, name }: Props) => {
   return (
     <label className="input ">
       <span>{children}</span>
-      <input type={type} placeholder={placeholder} />
+      <input type={type} name={name} required />
     </label>
   );
 };

@@ -24,12 +24,19 @@ const Navigation = (props: Props) => {
               <Link href="/contacts">Contcts</Link>
             </li>
           </ul>
+          {session?.data && <Link href="/profile">Profile</Link>}
           {session?.data ? (
-            <Link href="#" onClick={() => signOut({ callbackUrl: "/" })}>
-              Sign-Out
+            <Link
+              className="button"
+              href="#"
+              onClick={() => signOut({ callbackUrl: "/" })}
+            >
+              SignOut
             </Link>
           ) : (
-            <Link href="/api/auth/signin">Sign-In</Link>
+            <Link className="button" href="/signin">
+              SignIn
+            </Link>
           )}
         </div>
       </div>

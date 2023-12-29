@@ -1,14 +1,14 @@
 export const users = [
   {
     id: "1",
-    email: "mishanep@gmail.com",
-    name: "Misha Nep",
+    email: "pustilnyk.oleksii@gmail.com",
+    name: "Pustilnyk Oleksii",
     password: "12345",
     role: "admin",
   },
   {
     id: "2",
-    email: "admin@pcgramota.ru",
+    email: "admin@admin.com",
     name: "Super Admin",
     password: "12345",
     role: "admin",

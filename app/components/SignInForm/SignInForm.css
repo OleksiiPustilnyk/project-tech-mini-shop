@@ -5,7 +5,7 @@
   align-items: center;
   width: min(450px, 100%);
   margin: auto;
-  height: 75vh;
+  height: 30vh;
   gap: 30px;
 }
 
@@ -24,4 +24,4 @@ legend {
 }
 
 /* .form-buttons {
-} */
+  } */
