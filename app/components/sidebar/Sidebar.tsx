@@ -8,13 +8,13 @@ export default function Sidebar() {
       <h3 className="sidebar-title">Categories:</h3>
       <ul className="sidebar-category  gap-6 list-none  ">
         <li>
-          <Link href="/iPhone">iPhone</Link>
+          <Link href="/iphone">iPhone</Link>
         </li>
         <li>
-          <Link href="/Watch">Watch</Link>
+          <Link href="/watch">Watch</Link>
         </li>
         <li>
-          <Link href="/Macbook">Macbook</Link>
+          <Link href="/macbook">Macbook</Link>
         </li>
       </ul>
     </div>

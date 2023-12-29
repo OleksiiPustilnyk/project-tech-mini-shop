@@ -16,7 +16,7 @@ const productsArray: Product[] = [
     description: "128 Gb",
     color: "blue",
     price: "750",
-    category: "iPhone",
+    category: "iphone",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const productsArray: Product[] = [
     description: "512 Gb",
     color: "space gray",
     price: "1750",
-    category: "Macbook",
+    category: "macbook",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const productsArray: Product[] = [
     description: "41 mm",
     color: "white",
     price: "550",
-    category: "Watch",
+    category: "watch",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const productsArray: Product[] = [
     description: "512 Gb",
     color: "blue",
     price: "650",
-    category: "iPhone",
+    category: "iphone",
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const productsArray: Product[] = [
     description: "128 Gb",
     color: "black",
     price: "1050",
-    category: "Macbook",
+    category: "macbook",
   },
   {
     id: 6,
@@ -61,7 +61,7 @@ const productsArray: Product[] = [
     description: "48 mm",
     color: "blue",
     price: "750",
-    category: "Watch",
+    category: "watch",
   },
   {
     id: 7,
@@ -70,7 +70,7 @@ const productsArray: Product[] = [
     description: "256 Gb",
     color: "pink",
     price: "1000",
-    category: "iPhone",
+    category: "iphone",
   },
   {
     id: 8,
@@ -79,7 +79,7 @@ const productsArray: Product[] = [
     description: "512 Gb",
     color: "white",
     price: "1250",
-    category: "Macbook",
+    category: "macbook",
   },
   {
     id: 9,
@@ -88,7 +88,7 @@ const productsArray: Product[] = [
     description: "40 mm",
     color: "black",
     price: "750",
-    category: "Watch",
+    category: "watch",
   },
 ];
 
