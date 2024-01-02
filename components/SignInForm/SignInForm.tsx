@@ -1,6 +1,6 @@
 "use client";
 
-import Input from "@/app/components/UI/Input/Input";
+import Input from "@/components/UI/Input/Input";
 
 import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
