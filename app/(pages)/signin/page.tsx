@@ -1,5 +1,5 @@
-import { SignInForm } from "@/app/components/SignInForm/SignInForm";
-import { GoogleButton } from "@/app/components/UI/GoogleButton/GoogleButton";
+import { SignInForm } from "@/components/SignInForm/SignInForm";
+import { GoogleButton } from "@/components/UI/GoogleButton/GoogleButton";
 import SignInLayout from "./layout";
 
 export default async function SignIn() {

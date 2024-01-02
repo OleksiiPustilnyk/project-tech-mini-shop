@@ -1,4 +1,4 @@
-import ProductsListItem from "@/app/components/Products/ProductsListItem";
+import ProductsListItem from "@/components/Products/ProductsListItem";
 import productsArray from "@/utils/productsArray";
 
 interface Props {
