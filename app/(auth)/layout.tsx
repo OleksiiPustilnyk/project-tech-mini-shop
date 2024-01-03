@@ -1,8 +1,9 @@
+import Header from "@/components/Header/Header";
+import { Providers } from "@/components/Providers/Providers";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import Header from "../components/Header/Header";
-import { Providers } from "../components/Providers/Providers";
+
+import "@/styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,11 @@ export default function RootLayout({
           <header>
             <Header />
           </header>
-          {children}
+          <main>
+            <div className="container mx-auto grid grid-cols-4 gap-4">
+              <div className="col-span-4 min-h-[fit-content]">{children}</div>
+            </div>
+          </main>
         </Providers>
       </body>
     </html>
