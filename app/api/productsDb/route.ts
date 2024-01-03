@@ -1,7 +1,6 @@
 import { connectToDatabase } from "@/helpers/server-helpers";
 import prisma from "@/prisma";
 import { NextResponse } from "next/server";
-// import bcrypt from "bcrypt";
 
 export const GET = async () => {
   try {
@@ -19,9 +18,6 @@ export const POST = async (req: Request) => {
   try {
     const { img, title, description, color, price, category } =
       await req.json();
-    // if (!img || !title || !description || !color || !price || !category)
-    //   return NextResponse.json({ message: "Invalid Data" }, { status: 422 });
-    // const hashedPassword = await bcrypt.hash(password, 10);
     await connectToDatabase();
     const product = await prisma.product.create({
       data: { img, title, description, color, price, category },

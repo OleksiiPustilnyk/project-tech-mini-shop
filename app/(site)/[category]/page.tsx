@@ -1,13 +1,21 @@
 import ProductsListItem from "@/components/Products/ProductsListItem";
-import productsArray from "@/utils/productsArray";
-
 interface Props {
+  id: number;
+  img: string;
+  title: string;
+  description: string;
+  color: string;
+  price: string;
+  category: string;
   params: {
     category: string;
   };
 }
 
-export default function Category({ params }: Props) {
+export default async function Category({ params }: Props) {
+  const responce = await fetch(`${process.env.NEXTAUTH_URL}/api/productsDb`);
+  const items = (await responce.json()).products as Props[];
+  console.log(items);
   return (
     <div className=" ">
       <h1>
@@ -15,7 +23,7 @@ export default function Category({ params }: Props) {
         <span className="capitalize">{params.category}</span>
       </h1>
       <div className="grid grid-cols-3 gap-4">
-        {productsArray.map(
+        {items.map(
           ({ id, img, title, description, color, price, category }) => {
             if (category === params.category) {
               return (
