@@ -1,13 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-// import Sidebar from "../../../components/Sidebar/Sidebar";
 import { Providers } from "@/components/Providers/Providers";
-// import Header from "@/components/Header/Header";
 
 import "@/styles/globals.css";
-// import Header from "@/components/Header/Header";
-// import { ReactNode } from "react";
-// import Sidebar from "@/components/Sidebar/Sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,11 +13,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params: { locale },
 }: {
   children: React.ReactNode;
+  params: { locale: string };
 }) {
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={inter.className}>
         <Providers>
           <div className="flex min-h-screen flex-col">{children}</div>
