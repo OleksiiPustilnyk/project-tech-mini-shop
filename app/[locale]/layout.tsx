@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import Header from "../components/Header/Header";
-import { Providers } from "../components/Providers/Providers";
+import { Providers } from "@/components/Providers/Providers";
+
+import "@/styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,19 +13,22 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params: { locale },
 }: {
   children: React.ReactNode;
+  params: { locale: string };
 }) {
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={inter.className}>
         <Providers>
-          <header>
-            <Header />
-          </header>
-          {children}
+          <div className="flex min-h-screen flex-col">{children}</div>
+          {/* <div id="overlay" /> */}
         </Providers>
       </body>
     </html>
   );
 }
+
+// params: { locale },
+// ang={locale}

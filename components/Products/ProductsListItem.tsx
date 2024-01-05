@@ -1,6 +1,7 @@
 import "./ProductsListItem.scss";
+import Image from "next/image";
 
-type Props = {
+export type Props = {
   id: number;
   img: string;
   title: string;
@@ -25,7 +26,7 @@ const ProductsListItem = ({
         <div className="proguct-image">
           <div className="block">
             <div className="image rounded-t-xl p-5 bg-white">
-              <img src={img} alt="img-product " />
+              <img src={img} alt="img-product" />
             </div>
           </div>
         </div>

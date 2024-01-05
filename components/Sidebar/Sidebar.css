@@ -1,0 +1,19 @@
+.sidebar {
+  background-color: #393d40;
+  padding: 20px;
+}
+.sidebar .sidebar-title {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+.sidebar .sidebar-category {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .sidebar-category-product {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.sidebar .sidebar-category a:hover {
+  color: #ee6059;
+}/*# sourceMappingURL=Sidebar.css.map */

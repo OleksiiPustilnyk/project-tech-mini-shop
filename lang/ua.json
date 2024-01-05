@@ -1,0 +1,22 @@
+{
+  "navigation": {
+    "home": "Головна сторінка",
+    "about": "Про нас",
+    "contacts": "Контакти",
+    "profile": "Профіль"
+  },
+  "page": {
+    "home": {
+      "title": "Головна сторінка"
+    },
+    "about": {
+      "title": "Про нас"
+    },
+    "contacts": {
+      "title": "Контакти"
+    },
+    "profile": {
+      "title": "Профіль"
+    }
+  }
+}
