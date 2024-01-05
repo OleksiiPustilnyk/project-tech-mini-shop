@@ -1,11 +1,7 @@
 import Header from "@/components/Header/Header";
-import { Providers } from "@/components/Providers/Providers";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 
 import "@/styles/globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,19 +14,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Providers>
-          <header>
-            <Header />
-          </header>
-          <main>
-            <div className="container mx-auto grid grid-cols-4 gap-4">
-              <div className="col-span-4 min-h-[fit-content]">{children}</div>
-            </div>
-          </main>
-        </Providers>
-      </body>
-    </html>
+    <>
+      <Header />
+      <main>
+        <div className="container mx-auto grid grid-cols-4 gap-4">
+          <div className="col-span-4 min-h-[fit-content]">{children}</div>
+        </div>
+      </main>
+    </>
   );
 }
