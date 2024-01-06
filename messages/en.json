@@ -3,6 +3,12 @@
     "title": "Home"
   },
   "About": {
-    "title": "Hello world!"
+    "title": "About"
+  },
+  "Contacts": {
+    "title": "Contacts"
+  },
+  "Profile": {
+    "title": "Profile of"
   }
 }
