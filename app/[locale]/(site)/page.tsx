@@ -1,6 +1,6 @@
 import ProductsListItem, {
   Props,
-} from "../../components/Products/ProductsListItem";
+} from "../../../components/Products/ProductsListItem";
 
 export default async function Home() {
   // витягую айтеми з бази

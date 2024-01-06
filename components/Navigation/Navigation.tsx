@@ -22,8 +22,8 @@ const Navigation = (props: Props) => {
             <li>
               <Link href="/contacts">Contcts</Link>
             </li>
+            <li>{session?.data && <Link href="/profile">Profile</Link>}</li>
           </ul>
-          {session?.data && <Link href="/profile">Profile</Link>}
         </div>
       </div>
       {session?.data ? (

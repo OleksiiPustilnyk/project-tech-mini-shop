@@ -1,5 +1,4 @@
 import "./ProductsListItem.scss";
-import Image from "next/image";
 
 export type Props = {
   id: number;
