@@ -10,5 +10,14 @@
   },
   "Profile": {
     "title": "Профіль"
+  },
+  "Navigation": {
+    "home": "Головна",
+    "about": "Про нас",
+    "contacts": "Контакти",
+    "profile": "Профіль"
+  },
+  "Sidebar": {
+    "categories": "Категорії"
   }
 }

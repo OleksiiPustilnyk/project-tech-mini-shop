@@ -10,5 +10,14 @@
   },
   "Profile": {
     "title": "Profile of"
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "contacts": "Contacts",
+    "profile": "Profile"
+  },
+  "Sidebar": {
+    "categories": "Categories"
   }
 }
