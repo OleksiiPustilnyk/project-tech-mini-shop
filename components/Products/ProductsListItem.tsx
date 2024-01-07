@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 import "./ProductsListItem.scss";
 
 export type Props = {
@@ -19,6 +21,8 @@ const ProductsListItem = ({
   price,
   category,
 }: Props) => {
+  const t = useTranslations("ProductsListItem");
+
   return (
     <div className=" ">
       <div className="product-card rounded-xl">
@@ -32,8 +36,12 @@ const ProductsListItem = ({
         <div className="p-5">
           <h4 className="product-title">{title}</h4>
           <div className="product-description">{description}</div>
-          <div className="product-features">Color: {color}</div>
-          <div className="product-price">Price: $ {price}</div>
+          <div className="product-features">
+            {t("color_product")}: {color}
+          </div>
+          <div className="product-price">
+            {t("price_product")}: $ {price}
+          </div>
         </div>
       </div>
     </div>

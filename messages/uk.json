@@ -19,5 +19,9 @@
   },
   "Sidebar": {
     "categories": "Категорії"
+  },
+  "ProductsListItem": {
+    "color_product": "Колір",
+    "price_product": "Ціна"
   }
 }
