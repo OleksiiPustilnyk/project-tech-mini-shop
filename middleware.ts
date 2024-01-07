@@ -9,6 +9,20 @@ export default createMiddleware({
   localeDetection,
 });
 
+// export default createMiddleware({
+//   // A list of all locales that are supported
+//   locales: ["en", "de"],
+//   // Used when no locale matches
+//   defaultLocale: "en",
+//   pathnames,
+//   localePrefix,
+// });
+
 export const config = {
   matcher: ["/", "/(uk|en)/:path*", "/((?!_next|_vercel|.*\\..*).*)"],
 };
+
+// export const config = {
+//   // Match only internationalized pathnames
+//   matcher: ["/", "/(de|en)/:path*"],
+// };

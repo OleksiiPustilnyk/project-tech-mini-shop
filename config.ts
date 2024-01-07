@@ -4,10 +4,14 @@ export const locales = ["en", "uk"] as const;
 
 export const pathnames = {
   "/": "/",
+  "/about": "/about",
+  "/contacts": "/contacts",
+  "/profile": "/profile",
 } satisfies Pathnames<typeof locales>;
 
 // Use the default: `always`
-export const localePrefix = "as-needed";
+// export const localePrefix = "as-needed";
+export const localePrefix = undefined;
 
 export const localeDetection = false;
 

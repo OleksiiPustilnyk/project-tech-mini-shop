@@ -1,6 +1,7 @@
 import "./Header.scss";
 import Navigation from "../Navigation/Navigation";
 import Link from "next/link";
+import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
 
 export default function Header() {
   return (
@@ -12,6 +13,7 @@ export default function Header() {
       </Link>
 
       <Navigation />
+      <LocaleSwitcher />
     </div>
   );
 }

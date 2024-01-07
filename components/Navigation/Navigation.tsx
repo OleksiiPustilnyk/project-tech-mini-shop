@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useSession, signOut } from "next-auth/react";
+import NavigationLink from "./NavigationLink";
 
 type Props = {};
 const Navigation = (props: Props) => {
@@ -14,15 +15,19 @@ const Navigation = (props: Props) => {
         <div className="flex items-center justify-center gap-2 md:gap-8">
           <ul className="menu-list flex gap-6 list-none   ">
             <li>
-              <Link href="/">Home</Link>
+              <NavigationLink href="/">Home</NavigationLink>
             </li>
             <li>
-              <Link href="/about">About</Link>
+              <NavigationLink href="/about">About</NavigationLink>
             </li>
             <li>
-              <Link href="/contacts">Contcts</Link>
+              <NavigationLink href="/contacts">Contcts</NavigationLink>
             </li>
-            <li>{session?.data && <Link href="/profile">Profile</Link>}</li>
+            <li>
+              {session?.data && (
+                <NavigationLink href="/profile">Profile</NavigationLink>
+              )}
+            </li>
           </ul>
         </div>
       </div>

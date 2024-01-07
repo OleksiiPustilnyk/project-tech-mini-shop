@@ -23,5 +23,9 @@
   "ProductsListItem": {
     "color_product": "Color",
     "price_product": "Price"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, uk {UK} en {EN} other {Unknown}}"
   }
 }

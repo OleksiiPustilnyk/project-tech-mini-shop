@@ -23,5 +23,9 @@
   "ProductsListItem": {
     "color_product": "Колір",
     "price_product": "Ціна"
+  },
+  "LocaleSwitcher": {
+    "label": "Змінити мову",
+    "locale": "{locale, select, uk {UK} en {EN} other {Невідомий}}"
   }
 }
