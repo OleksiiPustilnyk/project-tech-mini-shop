@@ -1,7 +1,7 @@
 import createMiddleware from 'next-intl/middleware'
-import { pathnames, locales, localePrefix, localeDetection } from './config'
-import withAuth from 'next-auth/middleware'
-import { NextRequest } from 'next/server'
+import { pathnames, locales, localePrefix } from './config'
+// import withAuth from 'next-auth/middleware'
+// import { NextRequest } from 'next/server'
 
 const publicPages = ['/', '/login', '/about', '/contacts']
 
@@ -10,7 +10,7 @@ export default createMiddleware({
     locales,
     pathnames,
     localePrefix,
-    localeDetection,
+    localeDetection: false,
 })
 
 // const authMiddleware = withAuth(
