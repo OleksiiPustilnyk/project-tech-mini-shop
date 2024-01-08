@@ -1,18 +1,18 @@
 .sidebar {
-  background-color: #393d40;
-  padding: 20px;
-  .sidebar-title {
-    margin-bottom: 15px;
-    font-size: 25px;
-  }
-  .sidebar-category {
-    display: flex;
-    flex-direction: column;
-  }
-  .sidebar-category-product {
-    width: fit-content;
-  }
-  .sidebar-category a:hover {
-    color: #ee6059;
-  }
+    background-color: #393d40;
+    padding: 20px;
+    .sidebar-title {
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+    .sidebar-category {
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar-category-product {
+        width: fit-content;
+    }
+    .sidebar-category a:hover {
+        color: #ee6059;
+    }
 }

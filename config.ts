@@ -1,12 +1,12 @@
-import { Pathnames } from "next-intl/navigation";
+import { Pathnames } from 'next-intl/navigation';
 
-export const locales = ["en", "uk"] as const;
+export const locales = ['en', 'uk'] as const;
 
 export const pathnames = {
-  "/": "/",
-  "/about": "/about",
-  "/contacts": "/contacts",
-  "/profile": "/profile",
+    '/': '/',
+    '/about': '/about',
+    '/contacts': '/contacts',
+    '/profile': '/profile',
 } satisfies Pathnames<typeof locales>;
 
 // Use the default: `always`

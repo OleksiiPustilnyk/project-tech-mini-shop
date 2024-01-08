@@ -1,31 +1,31 @@
 {
-  "Home": {
-    "title": "Home"
-  },
-  "About": {
-    "title": "About"
-  },
-  "Contacts": {
-    "title": "Contacts"
-  },
-  "Profile": {
-    "title": "Profile of"
-  },
-  "Navigation": {
-    "home": "Home",
-    "about": "About",
-    "contacts": "Contacts",
-    "profile": "Profile"
-  },
-  "Sidebar": {
-    "categories": "Categories"
-  },
-  "ProductsListItem": {
-    "color_product": "Color",
-    "price_product": "Price"
-  },
-  "LocaleSwitcher": {
-    "label": "Change language",
-    "locale": "{locale, select, uk {UK} en {EN} other {Unknown}}"
-  }
+    "Home": {
+        "title": "Home"
+    },
+    "About": {
+        "title": "About"
+    },
+    "Contacts": {
+        "title": "Contacts"
+    },
+    "Profile": {
+        "title": "Profile of"
+    },
+    "Navigation": {
+        "home": "Home",
+        "about": "About",
+        "contacts": "Contacts",
+        "profile": "Profile"
+    },
+    "Sidebar": {
+        "categories": "Categories"
+    },
+    "ProductsListItem": {
+        "color_product": "Color",
+        "price_product": "Price"
+    },
+    "LocaleSwitcher": {
+        "label": "Change language",
+        "locale": "{locale, select, uk {UK} en {EN} other {Unknown}}"
+    }
 }

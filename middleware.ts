@@ -1,12 +1,12 @@
-import createMiddleware from "next-intl/middleware";
-import { pathnames, locales, localePrefix, localeDetection } from "./config";
+import createMiddleware from 'next-intl/middleware';
+import { pathnames, locales, localePrefix, localeDetection } from './config';
 
 export default createMiddleware({
-  defaultLocale: "en",
-  locales,
-  pathnames,
-  localePrefix,
-  localeDetection,
+    defaultLocale: 'en',
+    locales,
+    pathnames,
+    localePrefix,
+    localeDetection,
 });
 
 // export default createMiddleware({
@@ -19,7 +19,7 @@ export default createMiddleware({
 // });
 
 export const config = {
-  matcher: ["/", "/(uk|en)/:path*", "/((?!_next|_vercel|.*\\..*).*)"],
+    matcher: ['/', '/(uk|en)/:path*', '/((?!_next|_vercel|.*\\..*).*)'],
 };
 
 // export const config = {
