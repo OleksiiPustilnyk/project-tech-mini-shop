@@ -1,14 +1,14 @@
-import './Button.css';
+import './Button.css'
 
 type Props = {
-    children: string;
-};
+    children: string
+}
 
 const Button = ({ children }: Props) => {
     return (
-        <button type="button" className="button">
+        <button type='button' className='button'>
             {children}
         </button>
-    );
-};
-export default Button;
+    )
+}
+export default Button

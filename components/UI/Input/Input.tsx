@@ -1,18 +1,18 @@
-import './Input.scss';
+import './Input.scss'
 
 type Props = {
-    children: string;
-    placeholder: string;
-    type: string;
-    name: string;
-};
+    children: string
+    placeholder: string
+    type: string
+    name: string
+}
 
 const Input = ({ children, type, name, placeholder }: Props) => {
     return (
-        <label className="input ">
+        <label className='input '>
             <span>{children}</span>
             <input type={type} name={name} placeholder={placeholder} required />
         </label>
-    );
-};
-export default Input;
+    )
+}
+export default Input

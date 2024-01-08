@@ -1,8 +1,8 @@
-import { render } from '@testing-library/react';
-import pick from 'lodash/pick';
-import { NextIntlClientProvider } from 'next-intl';
-import messages from '../../messages/en.json';
-import Navigation from './Navigation';
+import { render } from '@testing-library/react'
+import pick from 'lodash/pick'
+import { NextIntlClientProvider } from 'next-intl'
+import messages from '../../messages/en.json'
+import Navigation from './Navigation'
 
 jest.mock('next/navigation', () => ({
     usePathname: () => '/',
@@ -16,17 +16,17 @@ jest.mock('next/navigation', () => ({
     }),
     useParams: () => ({ locale: 'en' }),
     useSelectedLayoutSegment: () => ({ locale: 'en' }),
-}));
+}))
 
-console.log('HELLOOOOO');
+console.log('HELLOOOOO')
 
 it('renders', () => {
     render(
         <NextIntlClientProvider
-            locale="en"
+            locale='en'
             messages={pick(messages, ['Navigation', 'LocaleSwitcher'])}
         >
             <Navigation />
         </NextIntlClientProvider>,
-    );
-});
+    )
+})
