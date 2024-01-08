@@ -17,7 +17,7 @@ export default function Header() {
             </Link>
 
             <Navigation />
-            <SignInBtn session={undefined} />
+            <SignInBtn navLinks={[]} />
             <LocaleSwitcher />
         </div>
     );

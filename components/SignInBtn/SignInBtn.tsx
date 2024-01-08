@@ -1,34 +1,62 @@
-import { GetSessionParams, signOut } from 'next-auth/react';
+'use client';
 import Link from 'next/link';
-import { getSession } from 'next-auth/react';
+import { useSession, signOut } from 'next-auth/react';
+import { usePathname } from 'next/navigation';
+import NavigationLink from '../Navigation/NavigationLink';
 
-type SessionType = any;
+import './SignInBtn.scss';
 
-export default function SignInBtn({ session }: { session: SessionType }) {
+type NavLink = {
+    label: string;
+    href: string;
+};
+type Props = {
+    navLinks: NavLink[];
+};
+
+const SignInBtn = ({ navLinks }: Props) => {
+    const pathname = usePathname();
+    const session = useSession();
+
+    console.log(session);
+
     return (
         <>
-            {session ? (
+            {navLinks.map((link) => {
+                const isActive = pathname === link.href;
+
+                return (
+                    <Link
+                        key={link.label}
+                        href={link.href}
+                        className={isActive ? 'active' : ''}
+                    >
+                        {link.label}
+                    </Link>
+                );
+            })}
+            {session?.data && (
+                <NavigationLink href="/profile">
+                    <div className="border">
+                        <span className="icon-profile"></span>
+                    </div>
+                </NavigationLink>
+            )}
+            {session?.data ? (
                 <Link
-                    href="#"
                     className="button"
+                    href="#"
                     onClick={() => signOut({ callbackUrl: '/' })}
                 >
-                    SignOut
+                    Sign Out
                 </Link>
             ) : (
-                <Link href="/signin" className="button">
+                <Link className="button" href="/signin">
                     SignIn
                 </Link>
             )}
         </>
     );
-}
+};
 
-export async function getServerSideProps(
-    context: GetSessionParams | undefined,
-) {
-    const session = await getSession(context);
-    return {
-        props: { session },
-    };
-}
+export default SignInBtn;

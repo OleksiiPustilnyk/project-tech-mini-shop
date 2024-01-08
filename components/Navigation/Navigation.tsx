@@ -24,11 +24,11 @@ const Navigation = () => {
                                 {t('contacts')}
                             </NavigationLink>
                         </li>
-                        <li>
+                        {/* <li>
                             <NavigationLink href="/profile">
                                 {t('profile')}
                             </NavigationLink>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>
