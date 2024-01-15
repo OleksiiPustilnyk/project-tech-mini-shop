@@ -2,16 +2,9 @@ import ProductsListItem, {
     Props as ProductsListItemProps,
 } from '@/components/Products/ProductsListItem'
 
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
+import { getTranslations } from 'next-intl/server'
 
 type Props = {
-    id: number
-    img: string
-    title: string
-    description: string
-    color: string
-    price: string
-    category: string
     params: {
         category: string
         locale: string
@@ -23,7 +16,6 @@ export default async function Category({ params }: Props) {
     const items = (await response.json()).products as ProductsListItemProps[]
     console.log(items)
 
-    unstable_setRequestLocale(params.locale)
     const t = await getTranslations('Category')
 
     return (

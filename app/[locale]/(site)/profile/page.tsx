@@ -2,7 +2,6 @@ import { authConfig } from '@/configs/auth'
 import { getServerSession } from 'next-auth'
 
 import { getTranslations } from 'next-intl/server'
-import { unstable_setRequestLocale } from 'next-intl/server'
 
 type Props = {
     params: { locale: string }
@@ -10,8 +9,6 @@ type Props = {
 
 export default async function Profile({ params: { locale } }: Props) {
     const session = await getServerSession(authConfig)
-
-    unstable_setRequestLocale(locale)
 
     const t = await getTranslations('Profile')
 
