@@ -1,5 +1,5 @@
 import ProductsListItem from '@/components/Products/ProductsListItem'
-interface Props {
+type Props = {
     id: number
     img: string
     title: string
@@ -13,8 +13,8 @@ interface Props {
 }
 
 export default async function Category({ params }: Props) {
-    const responce = await fetch(`${process.env.NEXTAUTH_URL}/api/productsDb`)
-    const items = (await responce.json()).products as Props[]
+    const response = await fetch(`${process.env.NEXTAUTH_URL}/api/productsDb`)
+    const items = (await response.json()).products as Props[]
     console.log(items)
     return (
         <div className=' '>

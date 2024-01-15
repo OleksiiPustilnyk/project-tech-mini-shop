@@ -13,8 +13,8 @@ export default async function Home({ params: { locale } }: Props) {
     unstable_setRequestLocale(locale)
     const t = await getTranslations('Home')
 
-    const responce = await fetch(`${process.env.NEXTAUTH_URL}/api/productsDb`)
-    const { products } = await responce.json()
+    const response = await fetch(`${process.env.NEXTAUTH_URL}/api/productsDb`)
+    const { products } = await response.json()
     const items = products as ProductsListItemProps[]
 
     console.log(items)

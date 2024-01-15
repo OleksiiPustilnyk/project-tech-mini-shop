@@ -18,8 +18,6 @@ jest.mock('next/navigation', () => ({
     useSelectedLayoutSegment: () => ({ locale: 'en' }),
 }))
 
-console.log('HELLOOOOO')
-
 it('renders', () => {
     render(
         <NextIntlClientProvider
