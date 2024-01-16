@@ -1,28 +1,27 @@
 form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: min(450px, 100%);
-  margin: auto;
-  /* height: 30vh; */
-  gap: 30px;
-  border: 1px solid #393d40;
-  padding: 20px;
-  border-radius: 0.75rem;
-  .input {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    width: -webkit-fill-available;
-  }
+    justify-content: center;
+    align-items: center;
+    width: min(450px, 100%);
+    margin: auto;
+    gap: 30px;
+    border: 1px solid #393d40;
+    padding: 20px;
+    border-radius: 0.75rem;
+    .input {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: -webkit-fill-available;
+    }
 
-  .input input {
-    background: none;
-    border: 2px solid #393d40;
-    padding: 10px 15px;
-    border-radius: 4px;
-    color: #c9cccf;
-    font-size: 15px;
-  }
+    .input input {
+        background: none;
+        border: 2px solid #393d40;
+        padding: 10px 15px;
+        border-radius: 4px;
+        color: #c9cccf;
+        font-size: 15px;
+    }
 }

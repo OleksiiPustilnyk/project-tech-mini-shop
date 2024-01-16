@@ -1,0 +1,31 @@
+{
+    "Home": {
+        "title": "Головна"
+    },
+    "About": {
+        "title": "Про нас"
+    },
+    "Contacts": {
+        "title": "Контакти"
+    },
+    "Profile": {
+        "title": "Профіль"
+    },
+    "Navigation": {
+        "home": "Головна",
+        "about": "Про нас",
+        "contacts": "Контакти",
+        "profile": "Профіль"
+    },
+    "Sidebar": {
+        "categories": "Категорії"
+    },
+    "ProductsListItem": {
+        "color_product": "Колір",
+        "price_product": "Ціна"
+    },
+    "LocaleSwitcher": {
+        "label": "Змінити мову",
+        "locale": "{locale, select, uk {UK} en {EN} other {Невідомий}}"
+    }
+}
