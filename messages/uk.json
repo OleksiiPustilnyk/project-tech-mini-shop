@@ -27,5 +27,8 @@
     "LocaleSwitcher": {
         "label": "Змінити мову",
         "locale": "{locale, select, uk {UK} en {EN} other {Невідомий}}"
+    },
+    "Category": {
+        "productsInCategory": "Товар з категорії"
     }
 }

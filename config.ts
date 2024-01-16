@@ -7,6 +7,9 @@ export const pathnames = {
     '/about': '/about',
     '/contacts': '/contacts',
     '/profile': '/profile',
+    '/iphone': '/iphone',
+    '/watch': '/watch',
+    '/macbook': '/macbook',
 } satisfies Pathnames<typeof locales>
 
 export const localePrefix = 'as-needed'

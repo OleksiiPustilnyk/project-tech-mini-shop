@@ -1,25 +1,27 @@
-import ProductsListItem from '@/components/Products/ProductsListItem'
-interface Props {
-    id: number
-    img: string
-    title: string
-    description: string
-    color: string
-    price: string
-    category: string
+import ProductsListItem, {
+    Props as ProductsListItemProps,
+} from '@/components/Products/ProductsListItem'
+
+import { getTranslations } from 'next-intl/server'
+
+type Props = {
     params: {
         category: string
+        locale: string
     }
 }
 
 export default async function Category({ params }: Props) {
-    const responce = await fetch(`${process.env.NEXTAUTH_URL}/api/productsDb`)
-    const items = (await responce.json()).products as Props[]
+    const response = await fetch(`${process.env.NEXTAUTH_URL}/api/productsDb`)
+    const items = (await response.json()).products as ProductsListItemProps[]
     console.log(items)
+
+    const t = await getTranslations('Category')
+
     return (
         <div className=' '>
             <h1>
-                Products in category:{' '}
+                {t('productsInCategory')}:{' '}
                 <span className='capitalize'>{params.category}</span>
             </h1>
             <div className='grid grid-cols-3 gap-4'>

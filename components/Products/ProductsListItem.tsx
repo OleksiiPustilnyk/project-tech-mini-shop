@@ -26,7 +26,7 @@ const ProductsListItem = ({
     return (
         <div className=' '>
             <div className='product-card rounded-xl'>
-                <div className='proguct-image'>
+                <div className='product-image'>
                     <div className='block'>
                         <div className='image rounded-t-xl p-5 bg-white'>
                             <img src={img} alt='img-product' />

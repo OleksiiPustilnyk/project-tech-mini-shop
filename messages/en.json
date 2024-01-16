@@ -27,5 +27,8 @@
     "LocaleSwitcher": {
         "label": "Change language",
         "locale": "{locale, select, uk {UK} en {EN} other {Unknown}}"
+    },
+    "Category": {
+        "productsInCategory": "Products in category"
     }
 }
