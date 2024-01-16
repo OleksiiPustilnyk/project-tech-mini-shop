@@ -12,8 +12,9 @@ type Props = {
 }
 
 export default async function Category({ params }: Props) {
-    const response = await fetch(`${process.env.NEXTAUTH_URL}/api/productsDb`)
-    const items = (await response.json()).products as ProductsListItemProps[]
+    const response = await fetch(`http://localhost:8000/items`)
+    const items = (await response.json()) as ProductsListItemProps[]
+
     console.log(items)
 
     const t = await getTranslations('Category')
@@ -29,7 +30,7 @@ export default async function Category({ params }: Props) {
                     ({
                         id,
                         img,
-                        title,
+                        name,
                         description,
                         color,
                         price,
@@ -44,7 +45,7 @@ export default async function Category({ params }: Props) {
                                     <ProductsListItem
                                         id={id}
                                         img={img}
-                                        title={title}
+                                        name={name}
                                         description={description}
                                         color={color}
                                         price={price}
