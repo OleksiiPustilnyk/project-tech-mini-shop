@@ -4,6 +4,7 @@ import Input from '@/components/UI/Input/Input'
 import { useRouter } from 'next/navigation'
 import { signIn } from 'next-auth/react'
 import { FormEventHandler } from 'react'
+import { Button } from '../Button'
 
 const SignInForm = () => {
     const router = useRouter()
@@ -35,9 +36,9 @@ const SignInForm = () => {
                 Password:
             </Input>
 
-            <button type='submit' className='button'>
+            <Button type='submit' className='button'>
                 Sign In
-            </button>
+            </Button>
         </form>
     )
 }
