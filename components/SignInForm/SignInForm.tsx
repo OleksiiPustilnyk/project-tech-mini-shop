@@ -4,7 +4,7 @@ import Input from '@/components/UI/Input/Input'
 import { useRouter } from 'next/navigation'
 import { signIn } from 'next-auth/react'
 import { FormEventHandler } from 'react'
-import { Button } from '../Button'
+import { Button } from '../UI/Button/ButtonReg'
 
 const SignInForm = () => {
     const router = useRouter()
