@@ -29,7 +29,7 @@ const SignInButton = () => {
             <Link href={'/api/auth/signin'} className='button'>
                 Sign In
             </Link>
-            <Link href={'/signup'} className='button'>
+            <Link href={'/signup'} className='button-signUp'>
                 Sign Up
             </Link>
         </div>

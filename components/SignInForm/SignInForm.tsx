@@ -23,6 +23,7 @@ const SignInForm = () => {
         if (res && !res.error) {
             router.push('/profile')
         } else {
+            alert('Wrong credentials')
             console.log(res)
         }
     }

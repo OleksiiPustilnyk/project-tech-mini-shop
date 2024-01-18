@@ -33,7 +33,6 @@ export const authConfig: AuthOptions = {
                 email: {
                     label: 'Email',
                     type: 'text',
-                    placeholder: 'jsmith',
                 },
                 password: { label: 'Password', type: 'password' },
             },
