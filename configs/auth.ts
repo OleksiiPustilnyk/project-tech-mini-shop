@@ -1,9 +1,6 @@
 import type { AuthOptions, User } from 'next-auth'
 import GoggleProvider from 'next-auth/providers/google'
-import CredentialsProvider from 'next-auth/providers/credentials'
-import { connectToDatabase } from '@/helpers/server-helpers'
-import prisma from '@/prisma'
-import bcrypt from 'bcrypt'
+import Credentials from 'next-auth/providers/credentials'
 import { Backend_URL } from '@/lib/Constants'
 import { JWT } from 'next-auth/jwt'
 
@@ -30,7 +27,7 @@ export const authConfig: AuthOptions = {
             clientId: process.env.GOOGLE_CLIENT_ID!,
             clientSecret: process.env.GOOGLE_SECRET!,
         }),
-        CredentialsProvider({
+        Credentials({
             name: 'Credentials',
             credentials: {
                 email: {
