@@ -4,6 +4,7 @@ import Link from 'next/link'
 import LocaleSwitcher from '../LocaleSwitcher/LocaleSwitcher'
 import { useTranslations } from 'next-intl'
 import SignInBtn from '../SignInBtn/SignInBtn'
+import SignInButton from '../SignInBtn/SignInButton'
 
 export default function Header() {
     const t = useTranslations('Navigation')
@@ -17,7 +18,8 @@ export default function Header() {
             </Link>
 
             <Navigation />
-            <SignInBtn navLinks={[]} />
+            {/* <SignInBtn navLinks={[]} /> */}
+            <SignInButton />
             <LocaleSwitcher />
         </div>
     )

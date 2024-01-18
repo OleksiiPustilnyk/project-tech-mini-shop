@@ -5,7 +5,7 @@ import './ProductsListItem.scss'
 export type Props = {
     id: number
     img: string
-    title: string
+    name: string
     description: string
     color: string
     price: string
@@ -15,7 +15,7 @@ export type Props = {
 const ProductsListItem = ({
     id,
     img,
-    title,
+    name,
     description,
     color,
     price,
@@ -34,7 +34,7 @@ const ProductsListItem = ({
                     </div>
                 </div>
                 <div className='p-5'>
-                    <h4 className='product-title'>{title}</h4>
+                    <h4 className='product-title'>{name}</h4>
                     <div className='product-description'>{description}</div>
                     <div className='product-features'>
                         {t('color_product')}: {color}

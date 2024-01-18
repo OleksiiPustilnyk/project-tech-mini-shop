@@ -4,6 +4,7 @@ import Input from '@/components/UI/Input/Input'
 import { useRouter } from 'next/navigation'
 import { signIn } from 'next-auth/react'
 import { FormEventHandler } from 'react'
+import { Button } from '../UI/Button/ButtonReg'
 
 const SignInForm = () => {
     const router = useRouter()
@@ -22,6 +23,7 @@ const SignInForm = () => {
         if (res && !res.error) {
             router.push('/profile')
         } else {
+            alert('Wrong credentials')
             console.log(res)
         }
     }
@@ -35,9 +37,9 @@ const SignInForm = () => {
                 Password:
             </Input>
 
-            <button type='submit' className='button'>
+            <Button type='submit' className='button'>
                 Sign In
-            </button>
+            </Button>
         </form>
     )
 }

@@ -11,9 +11,9 @@ type Props = {
 export default async function Home({ params: { locale } }: Props) {
     const t = await getTranslations('Home')
 
-    const response = await fetch(`${process.env.NEXTAUTH_URL}/api/productsDb`)
-    const { products } = await response.json()
-    const items = products as ProductsListItemProps[]
+    const response = await fetch(`http://localhost:8000/items`)
+    const items = (await response.json()) as ProductsListItemProps[]
+    // const items = products as ProductsListItemProps[]
 
     console.log(items)
 
@@ -29,7 +29,7 @@ export default async function Home({ params: { locale } }: Props) {
                             ({
                                 id,
                                 img,
-                                title,
+                                name,
                                 description,
                                 color,
                                 price,
@@ -39,7 +39,7 @@ export default async function Home({ params: { locale } }: Props) {
                                     <ProductsListItem
                                         id={id}
                                         img={img}
-                                        title={title}
+                                        name={name}
                                         description={description}
                                         color={color}
                                         price={price}

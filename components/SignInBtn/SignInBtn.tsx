@@ -51,7 +51,7 @@ const SignInBtn = ({ navLinks }: Props) => {
                     Sign Out
                 </Link>
             ) : (
-                <Link className='button' href='/signin'>
+                <Link className='button' href='/signup'>
                     SignIn
                 </Link>
             )}
